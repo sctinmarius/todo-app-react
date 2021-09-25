@@ -1,10 +1,23 @@
+import "./App.css";
+import { Register, Login } from "./components/pages";
 
-import './App.css';
-import Login from './components/Login'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-   <Login />
+    <Router>
+      <Switch>
+        <Route path="/register">
+          <Register />
+        </Route>
+        <Route path="/signIn">
+          <Login />
+        </Route>
+        <Route path="/">
+          <div>homeee</div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
