@@ -1,5 +1,5 @@
 import "./App.css";
-import { Register, Login } from "./components/pages";
+import { Register, Login, Todos } from "./components/pages";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,7 +14,7 @@ function App() {
           <Login />
         </Route>
         <Route path="/">
-          <div>homeee</div>
+          <Todos />
         </Route>
       </Switch>
     </Router>

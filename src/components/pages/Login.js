@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../common/Button";
-import Card from "../common/Card";
-import Container from "../common/Container";
-import Logo from "../common/Logo";
-import Subtitle from "../common/Subtitle";
-import Title from "../common/Title";
+import { Button, Card, Container, Input, Logo, Subtitle, Title } from "../common";
 
 const Login = () => {
   return (
@@ -16,8 +11,8 @@ const Login = () => {
         <Subtitle name="Log in to continue." />
 
         <form autoComplete="off">
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <Input type="email" placeholder="Email" />
+          <Input type="password" placeholder="Password" />
           <div>
             <Link to="/register">Don’t have an account? Sign up.</Link>
           </div>
