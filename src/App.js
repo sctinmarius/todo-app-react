@@ -1,7 +1,7 @@
 import "./App.css";
 import { Register, Login, Todos } from "./components/pages";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   return (
@@ -10,12 +10,10 @@ function App() {
         <Route path="/register">
           <Register />
         </Route>
-        <Route path="/signIn">
+        <Route path="/login">
           <Login />
         </Route>
-        <Route path="/">
-          <Todos />
-        </Route>
+        <PrivateRoute path="/" component={Todos} />
       </Switch>
     </Router>
   );

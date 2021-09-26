@@ -197,3 +197,27 @@ a:link {
   letter-spacing: normal;
   color: #4a77e5;
 }
+
+.error-text {
+  padding-top: 14px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b92646;
+}
+
+.logout {
+  position: absolute;
+  top: 5px;
+  right:10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1f2a4b;
+}
